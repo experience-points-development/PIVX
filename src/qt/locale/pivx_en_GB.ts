@@ -62,12 +62,12 @@
         <translation>Receiving addresses</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your eXperience Points addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your eXperience Points addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your eXperience Points addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your eXperience Points addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</translation>
+        <source>eXperience Points will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XPs from being stolen by malware infecting your computer.</source>
+        <translation>eXperience Points will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XPs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XP&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XP&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Address:</translation>
     </message>
     <message>
-        <source>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a PIVX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
+        <source>Enter an eXperience Points Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter an eXperience Points Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
-        <source>The PIVX address to encrypt</source>
-        <translation>The PIVX address to encrypt</translation>
+        <source>The eXperience Points address to encrypt</source>
+        <translation>The eXperience Points address to encrypt</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this PIVX address</source>
-        <translation>Encrypt the private key for this PIVX address</translation>
+        <source>Encrypt the private key for this eXperience Points address</source>
+        <translation>Encrypt the private key for this eXperience Points address</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Browse transaction history</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Privacy Actions for zPIV</translation>
+        <source>Privacy Actions for zXP</source>
+        <translation>Privacy Actions for zXP</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -649,16 +649,16 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
-        <translation>Send coins to a PIVX address</translation>
+        <source>Send coins to an eXperience Points address</source>
+        <translation>Send coins to an eXperience Points address</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Request payments (generates QR codes and pivx: URIs)</translation>
+        <source>Request payments (generates QR codes and xp: URIs)</source>
+        <translation>Request payments (generates QR codes and xp: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -673,24 +673,24 @@
         <translation>Browse masternodes</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>&amp;About PIVX Core</translation>
+        <source>&amp;About eXperience Points Core</source>
+        <translation>&amp;About eXperience Points Core</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Show information about PIVX Core</translation>
+        <source>Show information about eXperience Points Core</source>
+        <translation>Show information about eXperience Points Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Modify configuration options for PIVX</translation>
+        <source>Modify configuration options for eXperience Points</source>
+        <translation>Modify configuration options for eXperience Points</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
-        <translation>Sign messages with your PIVX addresses to prove you own them</translation>
+        <source>Sign messages with your eXperience Points addresses to prove you own them</source>
+        <translation>Sign messages with your eXperience Points addresses to prove you own them</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
-        <translation>Verify messages to ensure they were signed with specified PIVX addresses</translation>
+        <source>Verify messages to ensure they were signed with specified eXperience Points addresses</source>
+        <translation>Verify messages to ensure they were signed with specified eXperience Points addresses</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -721,8 +721,8 @@
         <translation>Open Masternode configuration file</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Open a PIVX: URI or payment request</translation>
+        <source>Open a xp: URI or payment request</source>
+        <translation>Open a xp: URI or payment request</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -733,16 +733,16 @@
         <translation>Block explorer window</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Show the PIVX Core help message to get a list with possible PIVX command-line options</translation>
+        <source>Show the eXperience Points Core help message to get a list with possible eXperience Points command-line options</source>
+        <translation>Show the eXperience Points Core help message to get a list with possible eXperience Points command-line options</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core client</translation>
+        <source>eXperience Points Core client</source>
+        <translation>eXperience Points Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to PIVX network</source>
-        <translation><numerusform>%n active connection(s) to PIVX network</numerusform><numerusform>%n active connection(s) to PIVX network</numerusform></translation>
+        <source>%n active connection(s) to eXperience Points network</source>
+        <translation><numerusform>%n active connection(s) to eXperience Points network</numerusform><numerusform>%n active connection(s) to eXperience Points network</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -896,8 +896,8 @@ Address: %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (eXperiencePoints.conf).</source>
+        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (eXperiencePoints.conf).</translation>
     </message>
 </context>
 <context>
@@ -1134,8 +1134,8 @@ Address: %4
         <translation>This label turns red if any recipient receives an amount smaller than %1.</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Can vary +/- %1 upiv per input.</translation>
+        <source>Can vary +/- %1 uXP per input.</source>
+        <translation>Can vary +/- %1 uXP per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1189,8 +1189,8 @@ Address: %4
         <translation>Edit sending address</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>The entered address "%1" is not a valid PIVX address.</translation>
+        <source>The entered address "%1" is not a valid eXperience Points address.</source>
+        <translation>The entered address "%1" is not a valid eXperience Points address.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1246,16 +1246,16 @@ Address: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>About PIVX Core</translation>
+        <source>About eXperience Points Core</source>
+        <translation>About eXperience Points Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1301,16 +1301,16 @@ Address: %4
         <translation>Welcome</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Welcome to PIVX Core.</translation>
+        <source>Welcome to eXperience Points Core.</source>
+        <translation>Welcome to eXperience Points Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where eXperience Points Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where eXperience Points Core will store its data.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>eXperience Points Core will download and store a copy of the eXperience Points block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>eXperience Points Core will download and store a copy of the eXperience Points block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1321,8 +1321,8 @@ Address: %4
         <translation>Use a custom data directory:</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1463,12 +1463,12 @@ Address: %4
         <translation>Enter Address to Send to</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other eXperience Points addresses after it matures.
+To Add: enter percentage to give and eXperience Points address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other PIVX addresses after it matures.
-To Add: enter percentage to give and PIVX address to add to the MultiSend vector.
+        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other eXperience Points addresses after it matures.
+To Add: enter percentage to give and eXperience Points address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</translation>
     </message>
@@ -1726,8 +1726,8 @@ Please be patient after clicking import.</translation>
         <translation>Address / Amount:</translation>
     </message>
     <message>
-        <source>Add destinations to send PIV to</source>
-        <translation>Add destinations to send PIV to</translation>
+        <source>Add destinations to send XP to</source>
+        <translation>Add destinations to send XP to</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1825,48 +1825,48 @@ Please be patient after clicking import.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 XP</source>
+        <translation>Use 2 separate masternodes to mix funds up to 10000 XP</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 PIV</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 XP</source>
+        <translation>Use 8 separate masternodes to mix funds up to 10000 XP</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
-        <translation>This option is the quickest and will cost about ~0.025 PIV to anonymise 10000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 XP to anonymize 10000 XP</source>
+        <translation>This option is the quickest and will cost about ~0.025 XP to anonymise 10000 XP</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PIV to anonymize 10000 PIV</source>
-        <translation>This option is moderately fast and will cost about 0.05 PIV to anonymise 10000 PIV</translation>
+        <source>This option is moderately fast and will cost about 0.05 XP to anonymize 10000 XP</source>
+        <translation>This option is moderately fast and will cost about 0.05 XP to anonymise 10000 XP</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 PIV per 10000 PIV you anonymize.</source>
-        <translation>0.1 PIV per 10000 PIV you anonymise.</translation>
+        <source>0.1 XP per 10000 XP you anonymize.</source>
+        <translation>0.1 XP per 10000 XP you anonymise.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Configuration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening PIVX's configuration screen.</source>
-        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening PIVX's configuration screen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening eXperience Points's configuration screen.</source>
+        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening eXperience Points's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening PIVX's configuration screen.</source>
-        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening PIVX's configuration screen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening eXperience Points's configuration screen.</source>
+        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening eXperience Points's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening PIVX's configuration screen.</source>
-        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening PIVX's configuration screen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening eXperience Points's configuration screen.</source>
+        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening eXperience Points's configuration screen.</translation>
     </message>
 </context>
 <context>
@@ -1927,8 +1927,8 @@ Please be patient after clicking import.</translation>
         <translation>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
     </message>
     <message>
-        <source>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the PIVX client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the eXperience Points client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the eXperience Points client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1947,12 +1947,12 @@ Please be patient after clicking import.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automatically start PIVX after logging in to the system.</translation>
+        <source>Automatically start eXperience Points after logging in to the system.</source>
+        <translation>Automatically start eXperience Points after logging in to the system.</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Start PIVX on system login</translation>
+        <source>&amp;Start eXperience Points on system login</source>
+        <translation>&amp;Start eXperience Points on system login</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1979,50 +1979,50 @@ Please be patient after clicking import.</translation>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting PIVX.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting PIVX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting eXperience Points.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting eXperience Points.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</source>
+https://github.com/experience-points-development/eXperience-Points</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/pivx-project/pivx-project-translations</translation>
+https://github.com/experience-points-development/eXperience-Points</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of PIV units to zPIV</source>
-        <translation>Enable automatic minting of PIV units to zPIV</translation>
+        <source>Enable automatic minting of XP units to zXP</source>
+        <translation>Enable automatic minting of XP units to zXP</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Enable zPIV Automint</translation>
+        <source>Enable zXP Automint</source>
+        <translation>Enable zXP Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage of incoming PIV which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming XP which get automatically converted to zXP via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage of incoming XP which get automatically converted to zXP via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Percentage of autominted zPIV</translation>
+        <source>Percentage of autominted zXP</source>
+        <translation>Percentage of autominted zXP</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</source>
-        <translation>Wait with automatic conversion to Zerocoin until enough PIV for this denomination is available</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough XP for this denomination is available</source>
+        <translation>Wait with automatic conversion to Zerocoin until enough XP for this denomination is available</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferred Automint zPIV Denomination</translation>
+        <source>Preferred Automint zXP Denomination</source>
+        <translation>Preferred Automint zXP Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Stake split threshold:</translation>
     </message>
     <message>
-        <source>Connect to the PIVX network through a SOCKS5 proxy.</source>
-        <translation>Connect to the PIVX network through a SOCKS5 proxy.</translation>
+        <source>Connect to the eXperience Points network through a SOCKS5 proxy.</source>
+        <translation>Connect to the eXperience Points network through a SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2184,8 +2184,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Total Balance, including all unavailable coins.</translation>
     </message>
     <message>
-        <source>PIV Balance</source>
-        <translation>PIV Balance</translation>
+        <source>XP Balance</source>
+        <translation>XP Balance</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2208,18 +2208,18 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Current locked balance in watch-only addresses</translation>
     </message>
     <message>
-        <source>Your current PIVX balance, unconfirmed and immature transactions included</source>
-        <translation>Your current PIVX balance, unconfirmed and immature transactions included</translation>
+        <source>Your current eXperience Points balance, unconfirmed and immature transactions included</source>
+        <translation>Your current eXperience Points balance, unconfirmed and immature transactions included</translation>
     </message>
     <message>
-        <source>zPIV Balance</source>
-        <translation>zPIV Balance</translation>
+        <source>zXP Balance</source>
+        <translation>zXP Balance</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</source>
+These zXP are spendable.</source>
         <translation>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zPIV are spendable.</translation>
+These zXP are spendable.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2228,8 +2228,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the PIVX network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the eXperience Points network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the eXperience Points network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2272,8 +2272,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Spendable:</translation>
     </message>
     <message>
-        <source>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</source>
-        <translation>Locked PIV or Masternode collaterals. These are excluded from zPIV minting.</translation>
+        <source>Locked XP or Masternode collaterals. These are excluded from zXP minting.</source>
+        <translation>Locked XP or Masternode collaterals. These are excluded from zXP minting.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2284,8 +2284,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>Unconfirmed:</translation>
     </message>
     <message>
-        <source>Your current zPIV balance, unconfirmed and immature zPIV included.</source>
-        <translation>Your current zPIV balance, unconfirmed and immature zPIV included.</translation>
+        <source>Your current zXP balance, unconfirmed and immature zXP included.</source>
+        <translation>Your current zXP balance, unconfirmed and immature zXP included.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2296,10 +2296,10 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
         <translation>out of sync</translation>
     </message>
     <message>
-        <source>Current percentage of zPIV.
+        <source>Current percentage of zXP.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Current percentage of zPIV.
+        <translation>Current percentage of zXP.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </translation>
     </message>
@@ -2308,14 +2308,14 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <translation>AutoMint is currently enabled and set to </translation>
     </message>
     <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</source>
-        <translation>To disable AutoMint add 'enablezeromint=0' in pivx.conf.</translation>
+        <source>To disable AutoMint add 'enablezeromint=0' in eXperiencePoints.conf.</source>
+        <translation>To disable AutoMint add 'enablezeromint=0' in eXperiencePoints.conf.</translation>
     </message>
     <message>
         <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</source>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in eXperiencePoints.conf</source>
         <translation>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf</translation>
+To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in eXperiencePoints.conf</translation>
     </message>
 </context>
 <context>
@@ -2341,12 +2341,12 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <source>Cannot start pivx: click-to-pay handler</source>
-        <translation>Cannot start pivx: click-to-pay handler</translation>
+        <source>Cannot start xp: click-to-pay handler</source>
+        <translation>Cannot start xp: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid PIVX address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid eXperience Points address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid eXperience Points address or malformed URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2431,8 +2431,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Zerocoin Actions:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the PIVX network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the PIVX network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the eXperience Points network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronises with the eXperience Points network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2443,8 +2443,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXP</source>
+        <translation>zXP</translation>
     </message>
     <message>
         <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
@@ -2455,8 +2455,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Available for Minting:</translation>
     </message>
     <message>
-        <source>0.000 000 00 PIV</source>
-        <translation>0.000 000 00 PIV</translation>
+        <source>0.000 000 00 XP</source>
+        <translation>0.000 000 00 XP</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2495,16 +2495,16 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>PRIVACY</translation>
     </message>
     <message>
-        <source>Enter an amount of Piv to convert to zPIV</source>
-        <translation>Enter an amount of Piv to convert to zPIV</translation>
+        <source>Enter an amount of XP to convert to zXP</source>
+        <translation>Enter an amount of XP to convert to zXP</translation>
     </message>
     <message>
-        <source>zPIV Control</source>
-        <translation>zPIV Control</translation>
+        <source>zXP Control</source>
+        <translation>zXP Control</translation>
     </message>
     <message>
-        <source>zPIV Selected:</source>
-        <translation>zPIV Selected:</translation>
+        <source>zXP Selected:</source>
+        <translation>zXP Selected:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2519,32 +2519,32 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Spend Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending</source>
-        <translation>Available (mature and spendable) zPIV for spending</translation>
+        <source>Available (mature and spendable) zXP for spending</source>
+        <translation>Available (mature and spendable) zXP for spending</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Available Balance:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zPIV for spending
+        <source>Available (mature and spendable) zXP for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Available (mature and spendable) zPIV for spending
+zXP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Available (mature and spendable) zXP for spending
 
-zPIV are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
+zXP are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
     </message>
     <message>
-        <source>0 zPIV</source>
-        <translation>0 zPIV</translation>
+        <source>0 zXP</source>
+        <translation>0 zXP</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>The PIVX address to send the payment to. Creates local payment to yourself when empty.</translation>
+        <source>The eXperience Points address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>The eXperience Points address to send the payment to. Creates local payment to yourself when empty.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2595,8 +2595,8 @@ zPIV are mature when they have more than 20 confirmations AND more than 2 mints 
         <translation>Zerocoin Stats:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zPIV</source>
-        <translation>Total Balance including unconfirmed and immature zPIV</translation>
+        <source>Total Balance including unconfirmed and immature zXP</source>
+        <translation>Total Balance including unconfirmed and immature zXP</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2617,24 +2617,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zPIV minting.
+        <source>Show the current status of automatic zXP minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to eXperiencePoints.conf
+- disable: add 'enablezeromint=0' to eXperiencePoints.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zXP
 
 </source>
-        <translation>Show the current status of automatic zPIV minting.
+        <translation>Show the current status of automatic zXP minting.
 
 To change the status (restart required):
-- enable: add 'enablezeromint=1' to pivx.conf
-- disable: add 'enablezeromint=0' to pivx.conf
+- enable: add 'enablezeromint=1' to eXperiencePoints.conf
+- disable: add 'enablezeromint=0' to eXperiencePoints.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zPIV
+- menu Settings-&gt;Options-&gt;Percentage of autominted zXP
 
 </translation>
     </message>
@@ -2683,8 +2683,8 @@ To change the percentage (no restart required):
         <translation>0 x</translation>
     </message>
     <message>
-        <source>Show zPIV denominations list</source>
-        <translation>Show zPIV denominations list</translation>
+        <source>Show zXP denominations list</source>
+        <translation>Show zXP denominations list</translation>
     </message>
     <message>
         <source>Show Denominations</source>
@@ -2835,12 +2835,12 @@ Maximum allowed: </source>
 Maximum allowed: </translation>
     </message>
     <message>
-        <source>zPIV Spend #: </source>
-        <translation>zPIV Spend #: </translation>
+        <source>zXP Spend #: </source>
+        <translation>zXP Spend #: </translation>
     </message>
     <message>
-        <source>zPIV Mint</source>
-        <translation>zPIV Mint</translation>
+        <source>zXP Mint</source>
+        <translation>zXP Mint</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2855,12 +2855,12 @@ Maximum allowed: </translation>
         <translation> Configured target percentage: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zPIV is currently disabled due to maintenance.</source>
-        <translation>zPIV is currently disabled due to maintenance.</translation>
+        <source>zXP is currently disabled due to maintenance.</source>
+        <translation>zXP is currently disabled due to maintenance.</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV is currently undergoing maintenance.</translation>
+        <source>zXP is currently undergoing maintenance.</source>
+        <translation>zXP is currently undergoing maintenance.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -2947,8 +2947,8 @@ Maximum allowed: </translation>
         <translation>Successfully minted </translation>
     </message>
     <message>
-        <source> zPIV in </source>
-        <translation> zPIV in </translation>
+        <source> zXP in </source>
+        <translation> zXP in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2975,8 +2975,8 @@ Maximum allowed: </translation>
         <translation>No 'Pay To' address provided, creating local payment</translation>
     </message>
     <message>
-        <source>Invalid Pivx Address</source>
-        <translation>Invalid Pivx Address</translation>
+        <source>Invalid eXperience Points Address</source>
+        <translation>Invalid eXperience Points Address</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -3022,7 +3022,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message numerus="yes">
         <source>PrivacyDialog</source>
-        <comment>Enter an amount of PIV to convert to zPIV</comment>
+        <comment>Enter an amount of XP to convert to zXP</comment>
         <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
     </message>
     <message>
@@ -3068,8 +3068,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Amount</translation>
     </message>
     <message>
-        <source>Enter a PIVX address (e.g. %1)</source>
-        <translation>Enter a PIVX address (e.g. %1)</translation>
+        <source>Enter an eXperience Points address (e.g. %1)</source>
+        <translation>Enter an eXperience Points address (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3112,8 +3112,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     </context>
 <context>
@@ -3210,8 +3210,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the PIVX debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the eXperience Points debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the eXperience Points debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3346,8 +3346,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Custom Backup Path:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Custom zPIV Backup Path:</translation>
+        <source>Custom zXP Backup Path:</source>
+        <translation>Custom zXP Backup Path:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3426,8 +3426,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the PIVX RPC console.</source>
-        <translation>Welcome to the PIVX RPC console.</translation>
+        <source>Welcome to the eXperience Points RPC console.</source>
+        <translation>Welcome to the eXperience Points RPC console.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3569,16 +3569,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>A&amp;mount:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the PIVX network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the eXperience Points network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the eXperience Points network.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>RECEIVE</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the PIVX network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the eXperience Points network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the eXperience Points network.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3814,12 +3814,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 XP</source>
+        <translation>0 XP</translation>
     </message>
     <message>
-        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 PIV applies</source>
-        <translation>SwiftX technology allows for near instant transactions - A flat fee of 0.01 PIV applies</translation>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 XP applies</source>
+        <translation>SwiftX technology allows for near instant transactions - A flat fee of 0.01 XP applies</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3874,16 +3874,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Coins automatically selected</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uXPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXPs in fee,&lt;br /&gt;while "at least" pays 1000 uXPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uXPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXPs in fee,&lt;br /&gt;while "at least" pays 1000 uXPs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uPIVs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uPIVs in fee,&lt;br /&gt;while "total at least" pays 1000 uPIVs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uXPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXPs in fee,&lt;br /&gt;while "total at least" pays 1000 uXPs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uXPs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXPs in fee,&lt;br /&gt;while "total at least" pays 1000 uXPs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for PIVX transactions than the network can process.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for eXperience Points transactions than the network can process.</source>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for eXperience Points transactions than the network can process.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3930,8 +3930,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Add &amp;Recipient</translation>
     </message>
     <message>
-        <source>Anonymized PIV</source>
-        <translation>Anonymised PIV</translation>
+        <source>Anonymized XP</source>
+        <translation>Anonymised XP</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3978,8 +3978,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>The split block tool does not work with multiple addresses. Try again.</translation>
     </message>
     <message>
-        <source>Warning: Invalid PIVX address</source>
-        <translation>Warning: Invalid PIVX address</translation>
+        <source>Warning: Invalid eXperience Points address</source>
+        <translation>Warning: Invalid eXperience Points address</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4085,8 +4085,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The PIVX address to send the payment to</source>
-        <translation>The PIVX address to send the payment to</translation>
+        <source>The eXperience Points address to send the payment to</source>
+        <translation>The eXperience Points address to send the payment to</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4125,8 +4125,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Message:</translation>
     </message>
     <message>
-        <source>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</source>
-        <translation>A message that was attached to the PIVX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the PIVX network.</translation>
+        <source>A message that was attached to the xp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the eXperience Points network.</source>
+        <translation>A message that was attached to the xp: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the eXperience Points network.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4152,8 +4152,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>PIVX Core is shutting down...</source>
-        <translation>PIVX Core is shutting down...</translation>
+        <source>eXperience Points Core is shutting down...</source>
+        <translation>eXperience Points Core is shutting down...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4175,8 +4175,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>The PIVX address to sign the message with</translation>
+        <source>The eXperience Points address to sign the message with</source>
+        <translation>The eXperience Points address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4207,16 +4207,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Sign the message to prove you own this PIVX address</translation>
+        <source>Sign the message to prove you own this eXperience Points address</source>
+        <translation>Sign the message to prove you own this eXperience Points address</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>The PIVX address the message was signed with</translation>
+        <source>The eXperience Points address the message was signed with</source>
+        <translation>The eXperience Points address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
-        <translation>Verify the message to ensure it was signed with the specified PIVX address</translation>
+        <source>Verify the message to ensure it was signed with the specified eXperience Points address</source>
+        <translation>Verify the message to ensure it was signed with the specified eXperience Points address</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4302,8 +4302,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4320,6 +4320,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>The PIVX Core developers</source>
         <translation>The PIVX Core developers</translation>
+    </message>
+    <message>
+        <source>The eXperience Points Core developers</source>
+        <translation>The eXperience Points Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4598,12 +4602,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Received via Obfuscation</translation>
     </message>
     <message>
-        <source>PIV Stake</source>
-        <translation>PIV Stake</translation>
+        <source>XP Stake</source>
+        <translation>XP Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>zXP Stake</source>
+        <translation>zXP Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4622,32 +4626,32 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Obfuscation Create Denominations</translation>
     </message>
     <message>
-        <source>Converted PIV to zPIV</source>
-        <translation>Converted PIV to zPIV</translation>
+        <source>Converted XP to zXP</source>
+        <translation>Converted XP to zXP</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Spent zPIV</translation>
+        <source>Spent zXP</source>
+        <translation>Spent zXP</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Received PIV from zPIV</translation>
+        <source>Received XP from zXP</source>
+        <translation>Received XP from zXP</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Minted Change as zPIV from zPIV Spend</translation>
+        <source>Minted Change as zXP from zXP Spend</source>
+        <translation>Minted Change as zXP from zXP Spend</translation>
     </message>
     <message>
-        <source>Converted zPIV to PIV</source>
-        <translation>Converted zPIV to PIV</translation>
+        <source>Converted zXP to XP</source>
+        <translation>Converted zXP to XP</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Transaction)</source>
-        <translation>Anonymous (zPIV Transaction)</translation>
+        <source>Anonymous (zXP Transaction)</source>
+        <translation>Anonymous (zXP Transaction)</translation>
     </message>
     <message>
-        <source>Anonymous (zPIV Stake)</source>
-        <translation>Anonymous (zPIV Stake)</translation>
+        <source>Anonymous (zXP Stake)</source>
+        <translation>Anonymous (zXP Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4861,12 +4865,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Exporting Successful</translation>
     </message>
     <message>
-        <source>Received PIV from zPIV</source>
-        <translation>Received PIV from zPIV</translation>
+        <source>Received XP from zXP</source>
+        <translation>Received XP from zXP</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zPIV</source>
-        <translation>Zerocoin Spend, Change in zPIV</translation>
+        <source>Zerocoin Spend, Change in zXP</source>
+        <translation>Zerocoin Spend, Change in zXP</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4902,8 +4906,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</source>
-        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 PIV.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XP.</source>
+        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 XP.</translation>
     </message>
 </context>
 <context>
@@ -4936,8 +4940,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Select zPIV to Spend</translation>
+        <source>Select zXP to Spend</source>
+        <translation>Select zXP to Spend</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4948,8 +4952,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>0</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>zXP</source>
+        <translation>zXP</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4983,8 +4987,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Calculated accumulator checkpoint is not what is recorded by block index</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. PIVX Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. eXperience Points Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. eXperience Points Core is probably already running.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -5011,16 +5015,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zXP minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each zXP minting (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for PIV inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for XP inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for XP inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for zXP inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for zXP inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5055,12 +5059,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in PIV/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in XP/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in XP/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in PIV/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in XP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in XP/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5163,20 +5167,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. PIVX Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. PIVX Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. eXperience Points Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. eXperience Points Core is probably already running.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 PIV.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XP.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 XP.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 PIV.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XP.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 XP.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5191,8 +5195,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong PIVX Core will not work properly.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong eXperience Points Core will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong eXperience Points Core will not work properly.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5351,6 +5355,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
+        <source>Copyright (C) 2019-%i The eXperience Points Core Developers</source>
+        <translation>Copyright (C) 2019-%i The eXperience Points Core Developers</translation>
+    </message>
+    <message>
         <source>Corrupted block database detected</source>
         <translation>Corrupted block database detected</translation>
     </message>
@@ -5435,8 +5443,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Error loading wallet.dat: Wallet corrupted</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of PIVX Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of PIVX Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of eXperience Points Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of eXperience Points Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5499,8 +5507,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in PIV/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in PIV/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in XP/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in XP/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -5559,8 +5567,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. PIVX Core is shutting down.</source>
-        <translation>Initialisation sanity check failed. PIVX Core is shutting down.</translation>
+        <source>Initialization sanity check failed. eXperience Points Core is shutting down.</source>
+        <translation>Initialisation sanity check failed. eXperience Points Core is shutting down.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5631,8 +5639,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Percentage of automatically minted Zerocoin  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the PIV and zPIV money supply statistics</source>
-        <translation>Reindex the PIV and zPIV money supply statistics</translation>
+        <source>Reindex the XP and zXP money supply statistics</source>
+        <translation>Reindex the XP and zXP money supply statistics</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5671,8 +5679,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 </translation>
     </message>
     <message>
-        <source>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disable all PIVX specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all eXperience Points specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Disable all eXperience Points specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5707,8 +5715,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic zXP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic zXP backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -6203,8 +6211,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Synchronising sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Syncing zPIV wallet...</translation>
+        <source>Syncing zXP wallet...</source>
+        <translation>Syncing zXP wallet...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6347,8 +6355,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Username for JSON-RPC connections</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Value is below the smallest available denomination (= 1) of zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of zXP</source>
+        <translation>Value is below the smallest available denomination (= 1) of zXP</translation>
     </message>
     <message>
         <source>Value more than Obfuscation pool maximum allows.</source>
@@ -6371,8 +6379,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Wallet is locked.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart PIVX Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart PIVX Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart eXperience Points Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart eXperience Points Core to complete</translation>
     </message>
     <message>
         <source>Wallet options:</source>

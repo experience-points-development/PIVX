@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše PIVX adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your eXperience Points addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše eXperience Points adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your PIVX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše PIVX adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your eXperience Points addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše eXperience Points adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>PIVX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your PIVs from being stolen by malware infecting your computer.</source>
-        <translation>PIVX se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše PIVy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>eXperience Points will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XPs from being stolen by malware infecting your computer.</source>
+        <translation>eXperience Points se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše XPy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PIV&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE PIVy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XP&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE XPy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -397,8 +397,8 @@
         <translation>Procházet historii transakcí</translation>
     </message>
     <message>
-        <source>Privacy Actions for zPIV</source>
-        <translation>Řešení soukromí pro zPIV</translation>
+        <source>Privacy Actions for zXP</source>
+        <translation>Řešení soukromí pro zXP</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -601,16 +601,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     <message>
-        <source>Send coins to a PIVX address</source>
-        <translation>Odeslat platbuna PIVX adresu</translation>
+        <source>Send coins to a eXperience Points address</source>
+        <translation>Odeslat platbuna eXperience Points adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and pivx: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a pivx: URIs)</translation>
+        <source>Request payments (generates QR codes and xp: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a xp: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -625,24 +625,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About PIVX Core</source>
-        <translation>&amp;O PIVX Core</translation>
+        <source>&amp;About eXperience Points Core</source>
+        <translation>&amp;O eXperience Points Core</translation>
     </message>
     <message>
-        <source>Show information about PIVX Core</source>
-        <translation>Zobraz informace o PIVX Core</translation>
+        <source>Show information about eXperience Points Core</source>
+        <translation>Zobraz informace o eXperience Points Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for PIVX</source>
-        <translation>Upravit možnosti konfigurace pro PIVX</translation>
+        <source>Modify configuration options for eXperience Points</source>
+        <translation>Upravit možnosti konfigurace pro eXperience Points</translation>
     </message>
     <message>
-        <source>Sign messages with your PIVX addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší PIVX adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your eXperience Points addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší eXperience Points adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified PIVX addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými PIVX adresami</translation>
+        <source>Verify messages to ensure they were signed with specified eXperience Points addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými eXperience Points adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -673,8 +673,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a PIVX: URI or payment request</source>
-        <translation>Otevřít PIVX: URI nebo platební žádost</translation>
+        <source>Open a eXperience Points: URI or payment request</source>
+        <translation>Otevřít eXperience Points: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -685,12 +685,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the PIVX Core help message to get a list with possible PIVX command-line options</source>
-        <translation>Zobrazit PIVX Core pomocnou zpráv pro získání seznamu možných parametrů PIVX pro příkazy do příkazové řádky</translation>
+        <source>Show the eXperience Points Core help message to get a list with possible eXperience Points command-line options</source>
+        <translation>Zobrazit eXperience Points Core pomocnou zpráv pro získání seznamu možných parametrů eXperience Points pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>PIVX Core client</source>
-        <translation>PIVX Core klient</translation>
+        <source>eXperience Points Core client</source>
+        <translation>eXperience Points Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -820,8 +820,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (pivx.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (pivx.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (eXperiencePoints.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (eXperiencePoints.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1081,8 +1081,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid PIVX address.</source>
-        <translation>Zadaná adresa "%1" není validní PIVX adresa.</translation>
+        <source>The entered address "%1" is not a valid eXperience Points address.</source>
+        <translation>Zadaná adresa "%1" není validní eXperience Points adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1138,12 +1138,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     <message>
-        <source>About PIVX Core</source>
-        <translation>O PIVX Core</translation>
+        <source>About eXperience Points Core</source>
+        <translation>O eXperience Points Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1177,16 +1177,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to PIVX Core.</source>
-        <translation>Vítejte v PIVX Core.</translation>
+        <source>Welcome to eXperience Points Core.</source>
+        <translation>Vítejte v eXperience Points Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where PIVX Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude PIVX Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where eXperience Points Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude eXperience Points Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>PIVX Core will download and store a copy of the PIVX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>PIVX Core stáhne a uloží kopii PIVX blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>eXperience Points Core will download and store a copy of the eXperience Points block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>eXperience Points Core stáhne a uloží kopii eXperience Points blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1197,8 +1197,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1445,24 +1445,24 @@ MultiSend: %1</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 PIV</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 PIV</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 XP</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 XP</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PIV to anonymize 10000 PIV</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 PIV pro anonymizaci 10000 PIV</translation>
+        <source>This option is the quickest and will cost about ~0.025 XP to anonymize 10000 XP</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 XP pro anonymizaci 10000 XP</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 PIV per 10000 PIV you anonymize.</source>
-        <translation>0.1 PIV za 10000 PIV anonymizujete.</translation>
+        <source>0.1 XP per 10000 XP you anonymize.</source>
+        <translation>0.1 XP za 10000 XP anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1527,12 +1527,12 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start PIVX after logging in to the system.</source>
-        <translation>Automaticky spustit PIVX po přihlášení do systému</translation>
+        <source>Automatically start eXperience Points after logging in to the system.</source>
+        <translation>Automaticky spustit eXperience Points po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start PIVX on system login</source>
-        <translation>&amp;Spusti PIVX při přihlášení do systému</translation>
+        <source>&amp;Start eXperience Points on system login</source>
+        <translation>&amp;Spusti eXperience Points při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -1753,8 +1753,8 @@ MultiSend: %1</translation>
         <translation>N/A</translation>
     </message>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     </context>
 <context>
@@ -2079,8 +2079,8 @@ MultiSend: %1</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 PIV</source>
-        <translation>0 PIV</translation>
+        <source>0 XP</source>
+        <translation>0 XP</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2204,8 +2204,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The PIVX address to sign the message with</source>
-        <translation>PIVX adresa pro podepsání zprávy</translation>
+        <source>The eXperience Points address to sign the message with</source>
+        <translation>eXperience Points adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2232,16 +2232,16 @@ MultiSend: %1</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this PIVX address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto PIVX adresu</translation>
+        <source>Sign the message to prove you own this eXperience Points address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto eXperience Points adresu</translation>
     </message>
     <message>
-        <source>The PIVX address the message was signed with</source>
-        <translation>PIVX adresa zprávy byla podpsána</translation>
+        <source>The eXperience Points address the message was signed with</source>
+        <translation>eXperience Points adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified PIVX address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou PIVX adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified eXperience Points address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou eXperience Points adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2283,8 +2283,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>PIVX Core</source>
-        <translation>PIVX Core</translation>
+        <source>eXperience Points Core</source>
+        <translation>eXperience Points Core</translation>
     </message>
     </context>
 <context>
