@@ -8,9 +8,10 @@ reset-files.bash
 
 *.exe
 src/pivx
-src/pivxd
-src/pivx-cli
-src/pivx-tx
+src/eXperiencePointsd
+src/eXperiencePoints-cli
+src/eXperiencePoints-tx
+src/qt/eXperiencePoints-Qt
 src/test/test_pivx
 src/qt/test/test_pivx-qt
 

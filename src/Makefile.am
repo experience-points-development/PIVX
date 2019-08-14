@@ -74,7 +74,7 @@ if BUILD_BITCOIN_UTILS
 endif
 
 .PHONY: FORCE check-symbols check-security
-# pivx core #
+# eXperience Points core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -199,7 +199,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between pivxd and pivx-qt
+# server: shared between eXperiencePointsd and eXperiencePoints-Qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -247,7 +247,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between pivxd and pivx-qt, but only linked
+# wallet: shared between eXperiencePointsd and eXperiencePoints-Qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -346,7 +346,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between pivxd, and pivx-qt and non-server tools
+# common: shared between eXperiencePointsd, and eXperiencePoints-Qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -411,7 +411,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between pivx-cli and pivx-qt
+# cli: shared between eXperiencePoints-cli and eXperiencePoints-Qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -421,7 +421,7 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# pivxd binary #
+# eXperiencePointsd binary #
 eXperiencePointsd_SOURCES = pivxd.cpp
 eXperiencePointsd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 eXperiencePointsd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -446,7 +446,7 @@ eXperiencePointsd_LDADD = \
 
 eXperiencePointsd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# pivx-cli binary #
+# eXperiencePoints-cli binary #
 eXperiencePoints_cli_SOURCES = pivx-cli.cpp
 eXperiencePoints_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 eXperiencePoints_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -465,7 +465,7 @@ eXperiencePoints_cli_LDADD = \
 eXperiencePoints_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# pivx-tx binary #
+# eXperiencePoints-tx binary #
 eXperiencePoints_tx_SOURCES = pivx-tx.cpp
 eXperiencePoints_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 eXperiencePoints_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)

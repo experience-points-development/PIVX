@@ -145,7 +145,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     LogPrint(category, "GUI: %s\n", msg.toStdString());
 }
 
-/** Class encapsulating PIVX Core startup and shutdown.
+/** Class encapsulating eXperience Points Core startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinCore : public QObject
@@ -172,7 +172,7 @@ private:
     void handleRunawayException(std::exception* e);
 };
 
-/** Main PIVX application object */
+/** Main eXperience Points application object */
 class BitcoinApplication : public QApplication
 {
     Q_OBJECT
@@ -453,7 +453,7 @@ void BitcoinApplication::initializeResult(int retval)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // PIVX: URIs or payment requests:
+        // XP: URIs or payment requests:
         connect(paymentServer, SIGNAL(receivedPaymentRequest(SendCoinsRecipient)),
             window, SLOT(handlePaymentRequest(SendCoinsRecipient)));
         connect(window, SIGNAL(receivedURI(QString)),
@@ -547,7 +547,7 @@ int main(int argc, char* argv[])
     if (!Intro::pickDataDirectory())
         return 0;
 
-    /// 6. Determine availability of data directory and parse pivx.conf
+    /// 6. Determine availability of data directory and parse eXperiencePoints.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false))) {
         QMessageBox::critical(0, QObject::tr("eXperience Points Core"),
@@ -604,7 +604,7 @@ int main(int argc, char* argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // pivx: links repeatedly have their payment requests routed to this process:
+    // xp: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 

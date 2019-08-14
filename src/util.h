@@ -30,7 +30,7 @@
 #include <boost/thread/exceptions.hpp>
 #include <boost/thread/condition_variable.hpp> // for boost::thread_interrupted
 
-//PIVX only features
+//XP only features
 
 extern bool fMasterNode;
 extern bool fLiteMode;
@@ -214,7 +214,7 @@ void RenameThread(const char* name);
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("pivx-%s", name);
+    std::string s = strprintf("xp-%s", name);
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);
