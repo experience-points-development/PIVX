@@ -605,7 +605,7 @@
         <translation>eXperience Points Core</translation>
     </message>
     <message>
-        <source>Send coins to a eXperience Points address</source>
+        <source>Send coins to an eXperience Points address</source>
         <translation>Odeslat platbuna eXperience Points adresu</translation>
     </message>
     <message>

@@ -2737,7 +2737,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of Piv to convert to zXP\n"
+            "1. amount      (numeric, required) Enter an amount of XP to convert to zXP\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
