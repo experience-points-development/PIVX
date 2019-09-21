@@ -92,15 +92,12 @@ void ReceiveCoinsDialog::setModel(WalletModel* model)
 
 ReceiveCoinsDialog::~ReceiveCoinsDialog()
 {
-    QSettings settings;
-    settings.setValue("current_receive_address", address);
     delete ui;
 }
 
 void ReceiveCoinsDialog::clear()
 {
     ui->reqAmount->clear();
-    ui->reqAddress->setText(address);
     ui->reqLabel->setText("");
     ui->reqMessage->setText("");
     ui->reuseAddress->setChecked(false);
