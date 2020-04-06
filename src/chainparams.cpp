@@ -264,6 +264,8 @@ public:
         assert(hashGenesisBlock == uint256("0x00000732d7b120985c2051ccc37d1cb55057526fdbeba9666d7760fb51328ecf"));
         assert(genesis.hashMerkleRoot == uint256("0xfcea3047f39357950b756ed7a3ff4d1344998994d1dc5ea773409f595d9a147c"));
 
+        vSeeds.push_back(CDNSSeedData("experiencepoints.io", "mainnet-seeds.experiencepoints.io"));
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 63);     // starting with 'S'
@@ -407,6 +409,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
+
+        vSeeds.push_back(CDNSSeedData("experiencepoints.io", "testnet-seeds.experiencepoints.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 127);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 20);
