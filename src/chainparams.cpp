@@ -149,12 +149,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x90;
-        pchMessageStart[1] = 0xc4;
-        pchMessageStart[2] = 0xfd;
-        pchMessageStart[3] = 0xe9;
+        pchMessageStart[0] = 0xd9;
+        pchMessageStart[1] = 0x29;
+        pchMessageStart[2] = 0x96;
+        pchMessageStart[3] = 0x02;
         vAlertPubKey = ParseHex("04181a5e26968fc2baa58a44481f74eb3be7e573cd8af103b3325c4d01db2d0409ad695f1c00310db2232000ae54950be83ee66ec1e77c753ddf192a2741f68440");
-        nDefaultPort = 51472;
+        nDefaultPort = 19324;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // PIVX starting difficulty is 1 / 2^12
         bnProofOfStakeLimit = ~uint256(0) >> 24;
         bnProofOfStakeLimit_V2 = ~uint256(0) >> 20; // 60/4 = 15 ==> use 2**4 higher limit
@@ -328,12 +328,12 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x45;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x65;
-        pchMessageStart[3] = 0xba;
+        pchMessageStart[0] = 0x29;
+        pchMessageStart[1] = 0x96;
+        pchMessageStart[2] = 0x02;
+        pchMessageStart[3] = 0xd9;
         vAlertPubKey = ParseHex("042cbeb9ca34ea1b69fbef2c6c6dff7d048102e9c248eb5d889e46d2533c1a97ea09e9e96462d6d67617de5fd278c792a8a3a225bfd8f9b162eeaf67dcd0a6e928");
-        nDefaultPort = 51474;
+        nDefaultPort = 19326;
         nEnforceBlockUpgradeMajority = 4320; // 75%
         nRejectBlockOutdatedMajority = 5472; // 95%
         nToCheckBlockUpgradeMajority = 5760; // 4 days
@@ -455,11 +455,11 @@ public:
     {
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0xa1;
-        pchMessageStart[1] = 0xcf;
-        pchMessageStart[2] = 0x7e;
-        pchMessageStart[3] = 0xac;
-        nDefaultPort = 51476;
+        pchMessageStart[0] = 0x96;
+        pchMessageStart[1] = 0x02;
+        pchMessageStart[2] = 0xd9;
+        pchMessageStart[3] = 0x29;
+        nDefaultPort = 19328;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
@@ -565,7 +565,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 51478;
+        nDefaultPort = 19330;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
