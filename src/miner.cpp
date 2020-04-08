@@ -131,15 +131,22 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     const int nHeight = pindexPrev->nHeight + 1;
 
     // Make sure to create the correct block version
+    bool fZerocoinActive = nHeight >= Params().Zerocoin_StartHeight();
+    bool fZerocoinV2Active = nHeight >= Params().Zerocoin_Block_V2_Start();
     if (nHeight >= Params().Block_V7_StartHeight()) {
         pblock->nVersion = 7;       //!> Removes accumulator checkpoints
-    } else {
+    } else if (Params().IsStakeModifierV2(nHeight)) {
         pblock->nVersion = 6;       //!> Supports V2 Stake Modifiers.
+    } else if (fZerocoinV2Active) {
+        pblock->nVersion = 5;       //!> Supports CLTV activation
+    } else if (fZerocoinActive) {
+        pblock->nVersion = 4;
+    } else {
+        pblock->nVersion = 3;
     }
 
     // -regtest only: allow overriding block.nVersion with
     // -blockversion=N to test forking scenarios
-    bool fZerocoinActive = nHeight >= Params().Zerocoin_StartHeight();
     if (Params().MineBlocksOnDemand()) {
         if (fZerocoinActive)
             pblock->nVersion = 5;
