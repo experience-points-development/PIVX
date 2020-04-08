@@ -523,10 +523,14 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
 
         // Fill in header
         pblock->hashPrevBlock = pindexPrev->GetBlockHash();
-        if (!fProofOfStake)
+        if (!fProofOfStake) {
             UpdateTime(pblock, pindexPrev);
-        pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
-        pblock->nNonce = 0;
+            pblock->nNonce = rand() % 1000000;
+            pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
+        } else {
+            pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
+            pblock->nNonce = 0;
+        }
 
         //Calculate the accumulator checkpoint only if the previous cached checkpoint need to be updated
         if (pblock->nVersion < 7) {
