@@ -4394,6 +4394,11 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
 
 bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
 {
+
+    int nFees = 0;
+    int nStakerFee = 0;
+    int nMasternodeFee = 0;
+
     if (!tx.HasP2CSOutputs())
         return true;
 
@@ -4403,7 +4408,20 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
         // last output can either be a mn reward or a budget payment
         // cold staking is active much after nPublicZCSpends so GetMasternodePayment is always 3 PIV.
         // TODO: double check this if/when MN rewards change
-        if (lastOut.nValue == 3 * COIN)
+
+        CAmount blockValue = GetBlockValue(nHeight);
+        CAmount requiredMasternodePayment = GetMasternodePayment(nHeight, blockValue, 0, false);
+
+        nFees = lastOut.nValue - requiredMasternodePayment;
+        nStakerFee = nFees * 0.4;
+        nMasternodeFee = nFees - nStakerFee;
+
+        error("%s: requiredMasternodePayment = %s, lastOut.nValue = %s, nFees = %s, nStakerFee = %s, nMasternodeFee = %s",
+            __func__, requiredMasternodePayment, lastOut.nValue, nFees, nStakerFee, nMasternodeFee);
+        error("%s: lastOut.nValue == (requiredMasternodePayment + nMasternodeFee) = %s",
+            __func__, (lastOut.nValue == (requiredMasternodePayment + nMasternodeFee)));
+
+        if (lastOut.nValue == (requiredMasternodePayment + nMasternodeFee))
             return true;
 
         if (budget.IsBudgetPaymentBlock(nHeight) &
@@ -4737,8 +4755,8 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
     // Enforce block.nVersion=2 rule that the coinbase starts with serialized block height
     if (pindexPrev) { // pindexPrev is only null on the first block which is a version 1 block.
         CScript expect = CScript() << nHeight;
-        if (block.vtx[0].vin[0].scriptSig.size() < expect.size() ||
-            !std::equal(expect.begin(), expect.end(), block.vtx[0].vin[0].scriptSig.begin())) {
+        if ((nHeight > Params().EnforceBlockUpgradeMajority()) && (block.vtx[0].vin[0].scriptSig.size() < expect.size() ||
+            !std::equal(expect.begin(), expect.end(), block.vtx[0].vin[0].scriptSig.begin()))) {
             return state.DoS(100, error("%s : block height mismatch in coinbase", __func__), REJECT_INVALID,
                              "bad-cb-height");
         }

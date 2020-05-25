@@ -53,18 +53,18 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000077e296b47aa3003520719b8aafcba7c3975d39b4e19b899f14a70abe5f6"))
-    (850, uint256("0x11b21800ad2b1323d57528bbc64a9518ee67d3ca2378fdee8cb4de387ab6b28a"))
-    (5051, uint256("0x1766163ec2596b18aa8762e2dc4a7d86a06249cf569007e9c2f3da0b1431144f"))
-    (10431, uint256("0xcb542ae5eaf1cb8d9872c205bf28bbd102dd1c29a708888bc43357491247c673"))
-    (49786, uint256("0x0eeab3ab13a3064f9f5160048c7b4ea9fea9c3e073cf509920be9cdf9fd4edf5"))
-    (55355, uint256("0x6b8f5b64ec8db070ff7ff229a6c4295ed099489c76612d9f267083ac1a9dd06b"))
-    (99765, uint256("0xf5ca12a9eaac2f39e588cdc0eda9acc50d08518f42fcc3edfa45bbb8e06a2598"))
-    (137543, uint256("0x087fc4db51a229f7c20b84a3dfaaa49a55e4f64fa489e8c1325121ac5338ec5a"))
-    (282285, uint256("0xdc6a3c7ff88fbb9531a65c48697c729221abd94b58ca21b13e585e9a236ee400"));
+    (0, uint256("0x0000077e296b47aa3003520719b8aafcba7c3975d39b4e19b899f14a70abe5f6"));
+//    (850, uint256("0x11b21800ad2b1323d57528bbc64a9518ee67d3ca2378fdee8cb4de387ab6b28a"))
+//    (5051, uint256("0x1766163ec2596b18aa8762e2dc4a7d86a06249cf569007e9c2f3da0b1431144f"))
+//    (10431, uint256("0xcb542ae5eaf1cb8d9872c205bf28bbd102dd1c29a708888bc43357491247c673"))
+//    (49786, uint256("0x0eeab3ab13a3064f9f5160048c7b4ea9fea9c3e073cf509920be9cdf9fd4edf5"))
+//    (55355, uint256("0x6b8f5b64ec8db070ff7ff229a6c4295ed099489c76612d9f267083ac1a9dd06b"))
+//    (99765, uint256("0xf5ca12a9eaac2f39e588cdc0eda9acc50d08518f42fcc3edfa45bbb8e06a2598"))
+//    (137543, uint256("0x087fc4db51a229f7c20b84a3dfaaa49a55e4f64fa489e8c1325121ac5338ec5a"))
+//    (282285, uint256("0xdc6a3c7ff88fbb9531a65c48697c729221abd94b58ca21b13e585e9a236ee400"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1557039007, // * UNIX timestamp of last checkpoint block
+    1568829600, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     500         // * estimated number of transactions per day after checkpoint
@@ -75,7 +75,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     (0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1557039107,
+    1568829700,
     0,
     250};
 
@@ -83,7 +83,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1557039207,
+    1568829800,
     0,
     100};
 
@@ -181,7 +181,7 @@ public:
         nLastPOWBlock = 300;
         nModifierUpdateBlock = 0;
         nZerocoinStartHeight = 20;
-        nZerocoinStartTime = 1568063714;
+        nZerocoinStartTime = 1568862869;
         nBlockEnforceSerialRange = 0; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 999999999; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 0; //First block that bad serials emerged
@@ -191,9 +191,9 @@ public:
         nBlockZerocoinV2 = 40; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nBlockDoubleAccumulated = 0;
         nBlockStakeModifierlV2 = 801;
-        nBIP65ActivationHeight = 1808634;
+        nBIP65ActivationHeight = 40;
         // Activation height for TimeProtocolV2, Blocks V7 and newMessageSignatures
-        nBlockTimeProtocolV2 = 2153200;
+        nBlockTimeProtocolV2 = 313850;
 
         // Public coin spend enforcement
         nPublicZCSpends = 0;
@@ -202,7 +202,7 @@ public:
         nBlockEnforceNewMessageSignatures = nBlockTimeProtocolV2;
 
         // Blocks v7
-        nBlockLastAccumulatorCheckpoint = 1686240;
+        nBlockLastAccumulatorCheckpoint = 0;
         nBlockV7StartHeight = nBlockTimeProtocolV2;
 
         // Fake Serial Attack
@@ -219,7 +219,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "The New York Times Mar 29 2019 Brexit Goes Back to Square One as Parliament Rejects May’s Plan a Third Time";
+        const char* pszTimestamp = "The Wall Street Journal Sept 18 2019 Fed Cuts Rates By Quarter Point but Faces Growing Split";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -230,9 +230,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = BlockMerkleRoot(genesis);
         genesis.nVersion = 1;
-        genesis.nTime = 1557039007;
+        genesis.nTime = 1568829600;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 53347;
+        genesis.nNonce = 1026871;
 
         hashGenesisBlock = genesis.GetHash();
 
@@ -259,10 +259,10 @@ public:
         }
         */
 
-        assert(hashGenesisBlock == uint256("0x00000732d7b120985c2051ccc37d1cb55057526fdbeba9666d7760fb51328ecf"));
-        assert(genesis.hashMerkleRoot == uint256("0xfcea3047f39357950b756ed7a3ff4d1344998994d1dc5ea773409f595d9a147c"));
+        assert(hashGenesisBlock == uint256("0x0000077e296b47aa3003520719b8aafcba7c3975d39b4e19b899f14a70abe5f6"));
+        assert(genesis.hashMerkleRoot == uint256("0x89dd0b03f4b5a5e800f8f8ad2a01e5cf0b2b35beba8050a086538aa43b82b319"));
 
-        vSeeds.push_back(CDNSSeedData("experiencepoints.io", "mainnet-seeds.experiencepoints.io"));
+        vSeeds.push_back(CDNSSeedData("experiencepoints.io", "mainnet4-seeds.experiencepoints.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -345,7 +345,7 @@ public:
         nModifierUpdateBlock = 0;
         nMaxMoneyOut = 20000000000 * COIN;
         nZerocoinStartHeight = 20;
-        nZerocoinStartTime = 1568063814;
+        nZerocoinStartTime = 1568063714;
         nBlockEnforceSerialRange = 0; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 999999999; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 0; //First block that bad serials emerged
@@ -353,7 +353,7 @@ public:
         nBlockEnforceInvalidUTXO = 0; //Start enforcing the invalid UTXO's
         nInvalidAmountFiltered = 0; //Amount of invalid coins filtered through exchanges, that should be considered valid
         nBlockZerocoinV2 = 40; //!> The block that zerocoin v2 becomes active
-        nBlockStakeModifierlV2 = 801;
+        nBlockStakeModifierlV2 = 401;
         nBIP65ActivationHeight = 851019;
         // Activation height for TimeProtocolV2, Blocks V7 and newMessageSignatures
         nBlockTimeProtocolV2 = 1347000;
@@ -373,8 +373,8 @@ public:
         nSupplyBeforeFakeSerial = 0;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1557039107;
-        genesis.nNonce = 213285;
+        genesis.nTime = 1568829700;
+        genesis.nNonce = 523808;
 
         hashGenesisBlock = genesis.GetHash();
 
@@ -401,7 +401,7 @@ public:
         }
         */
 
-        assert(hashGenesisBlock == uint256("0x00000b0d0ec75465590aeabb203ca97f6847b76328ffdbb3f7188f44b12f4b65"));
+        assert(hashGenesisBlock == uint256("0x00000e7763d829ce36ad517c84718eabfa148a64bdc44bf768553250afa18180"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -475,7 +475,7 @@ public:
         nMaxMoneyOut = 20000000000 * COIN;
         nZerocoinStartHeight = 20;
         nBlockZerocoinV2 = 40;
-        nZerocoinStartTime = 1568063914;
+        nZerocoinStartTime = 1568063714;
         nBlockEnforceSerialRange = 0;               // Enforce serial range starting this block
         nBlockRecalculateAccumulators = 999999999;  // Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 0;          // First block that bad serials emerged
@@ -500,8 +500,8 @@ public:
         nFakeSerialBlockheightEnd = -1;
 
         //! Modify the regtest genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1557039207;
-        genesis.nNonce = 196733;
+        genesis.nTime = 1568829800;
+        genesis.nNonce = 2276680;
 
         hashGenesisBlock = genesis.GetHash();
 
@@ -528,7 +528,7 @@ public:
         }
         */
 
-	assert(hashGenesisBlock == uint256("0x000006eaa9f4ae6ce26e0fd876ee9a121591a8afbb75327c05018627f7dd20ec"));
+	assert(hashGenesisBlock == uint256("0x00000da7464c069207dae8862e13cb9f325b5de289b8f3446cbcf908a1039ed0"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.

@@ -618,15 +618,20 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
         for (CTxOut out : txNew.vout) {
             if (payee.scriptPubKey == out.scriptPubKey) {
 
-                nFees = txNew.GetValueOut() - nReward - requiredMasternodePayment;
+                nFees = out.nValue - requiredMasternodePayment;
                 nStakerFee = nFees * 0.4;
                 nMasternodeFee = nFees - nStakerFee;
 
-                if(out.nValue >= (requiredMasternodePayment + nMasternodeFee))
+                error("%s: requiredMasternodePayment = %s, out.nValue = %s, nFees = %s, nStakerFee = %s, nMasternodeFee = %s",
+                    __func__, requiredMasternodePayment, out.nValue, nFees, nStakerFee, nMasternodeFee);
+		error("%s: out.nValue == (requiredMasternodePayment + nMasternodeFee) = %s",
+                    __func__, (out.nValue == (requiredMasternodePayment + nMasternodeFee)));
+
+		if(out.nValue == (requiredMasternodePayment + nMasternodeFee))
                     found = true;
                 else
                     LogPrintf("%s : Masternode payment value (%s) different from required value (%s).\n",
-                            __func__, FormatMoney(out.nValue).c_str(), FormatMoney(requiredMasternodePayment).c_str());
+                            __func__, FormatMoney(out.nValue).c_str(), FormatMoney(requiredMasternodePayment + nMasternodeFee).c_str());
             }
         }
 
