@@ -205,7 +205,7 @@ bool MasterNodeWizardDialog::createMN()
         }
 
         // const QString& addr, const QString& label, const CAmount& amount, const QString& message
-        SendCoinsRecipient sendCoinsRecipient(QString::fromStdString(address.ToString()), QString::fromStdString(alias), CAmount(10000) * COIN, "");
+        SendCoinsRecipient sendCoinsRecipient(QString::fromStdString(address.ToString()), QString::fromStdString(alias), CAmount(500000) * COIN, "");
 
         // Send the 10 tx to one of your address
         QList<SendCoinsRecipient> recipients;
@@ -302,7 +302,7 @@ bool MasterNodeWizardDialog::createMN()
                 int indexOut = -1;
                 for (int i=0; i < (int)walletTx->vout.size(); i++) {
                     CTxOut& out = walletTx->vout[i];
-                    if (out.nValue == 10000 * COIN) {
+                    if (out.nValue == 500000 * COIN) {
                         indexOut = i;
                     }
                 }
