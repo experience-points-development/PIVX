@@ -212,6 +212,7 @@ public:
         nDefaultPort = 19324;
 
         // Note that of those with the service bits flag, most only support a subset of possible options
+        vSeeds.push_back(CDNSSeedData("experiencepoints.io", "mainnet-seeds.experiencepoints.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -323,6 +324,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
+        vSeeds.push_back(CDNSSeedData("experiencepoints.io", "testnet-seeds.experiencepoints.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 127);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 20);
