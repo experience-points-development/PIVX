@@ -205,11 +205,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x90;
-        pchMessageStart[1] = 0xc4;
-        pchMessageStart[2] = 0xfd;
-        pchMessageStart[3] = 0xe9;
-        nDefaultPort = 51472;
+        pchMessageStart[0] = 0xd9;
+        pchMessageStart[1] = 0x29;
+        pchMessageStart[2] = 0x96;
+        pchMessageStart[3] = 0x02;
+        nDefaultPort = 19324;
 
         // Note that of those with the service bits flag, most only support a subset of possible options
 
@@ -314,11 +314,11 @@ public:
          * a large 4-byte int at any alignment.
          */
 
-        pchMessageStart[0] = 0x45;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x65;
-        pchMessageStart[3] = 0xba;
-        nDefaultPort = 51474;
+        pchMessageStart[0] = 0x29;
+        pchMessageStart[1] = 0x96;
+        pchMessageStart[2] = 0x02;
+        pchMessageStart[3] = 0xd9;
+        nDefaultPort = 19326;
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -427,11 +427,11 @@ public:
          * a large 4-byte int at any alignment.
          */
 
-        pchMessageStart[0] = 0xa1;
-        pchMessageStart[1] = 0xcf;
-        pchMessageStart[2] = 0x7e;
-        pchMessageStart[3] = 0xac;
-        nDefaultPort = 51476;
+        pchMessageStart[0] = 0x96;
+        pchMessageStart[1] = 0x02;
+        pchMessageStart[2] = 0xd9;
+        pchMessageStart[3] = 0x29;
+        nDefaultPort = 19328;
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
