@@ -151,7 +151,7 @@ public:
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMasternodeCountDrift = 20;       // num of MN we allow the see-saw payments to be off by
-        consensus.nMaxMoneyOut = 21000000 * COIN;
+        consensus.nMaxMoneyOut = 20000000000 * COIN;
         consensus.nPoolMaxTransactions = 3;
         consensus.nProposalEstablishmentTime = 60 * 60 * 24;    // must be at least a day old to make it into a budget
         consensus.nStakeMinAge = 60 * 60;
@@ -165,25 +165,21 @@ public:
         consensus.strSporkPubKey = "0481C90933CF241F89DFDFC0ADED703DDCFE9BA0634DE1DCA8B881643CA0EC833DB1F7D825A2624352FC48446435E69E1185916CC509229C8E974EE18ECC1267D5";
 
         // height-based activations
-        consensus.height_last_PoW = 259200;
-        consensus.height_last_ZC_AccumCheckpoint = 1686240;
-        consensus.height_last_ZC_WrappedSerials = 1686229;
-        consensus.height_start_BIP65 = 1808634;             // Block v5: 82629b7a9978f5c7ea3f70a12db92633a7d2e436711500db28b97efd48b1e527
-        consensus.height_start_InvalidUTXOsCheck = 902850;
-        consensus.height_start_MessSignaturesV2 = 2153200;  // height_start_TimeProtoV2
-        consensus.height_start_StakeModifierNewSelection = 615800;
-        consensus.height_start_StakeModifierV2 = 1967000;   // Block v6: 0ef2556e40f3b9f6e02ce611b832e0bbfe7734a8ea751c7b555310ee49b61456
-        consensus.height_start_TimeProtoV2 = 2153200;       // Block v7: 14e477e597d24549cac5e59d97d32155e6ec2861c1003b42d0566f9bf39b65d5
-        consensus.height_start_ZC = 863787;                 // Block v4: 5b2482eca24caf2a46bb22e0545db7b7037282733faa3a42ec20542509999a64
-        consensus.height_start_ZC_InvalidSerials = 891737;
-        consensus.height_start_ZC_PublicSpends = 1880000;
-        consensus.height_start_ZC_SerialRangeCheck = 895400;
-        consensus.height_start_ZC_SerialsV2 = 1153160;
-        consensus.height_ZC_RecalcAccumulators = 908000;
-
-        // validation by-pass
-        consensus.nPivxBadBlockTime = 1471401614;    // Skip nBit validation of Block 259201 per PR #915
-        consensus.nPivxBadBlockBits = 0x1c056dac;    // Skip nBit validation of Block 259201 per PR #915
+        consensus.height_last_PoW = 300;                            // nLastPOWBlock
+        consensus.height_last_ZC_AccumCheckpoint = 0;               // nBlockLastGoodCheckpoint
+        consensus.height_last_ZC_WrappedSerials = 0;                // nFakeSerialBlockheightEnd
+        consensus.height_start_BIP65 = 1808634;                     // nBIP65ActivationHeight // Block v5:
+        consensus.height_start_InvalidUTXOsCheck = 0;               // nBlockEnforceInvalidUTXO
+        consensus.height_start_MessSignaturesV2 = 2153200;          // nBlockEnforceNewMessageSignatures // height_start_TimeProtoV2
+        consensus.height_start_StakeModifierNewSelection = 0;       // nModifierUpdateBlock
+        consensus.height_start_StakeModifierV2 = 801;               // nBlockStakeModifierlV2 // Block v6:
+        consensus.height_start_TimeProtoV2 = 2153200;               // nBlockTimeProtocolV2 // Block v7:
+        consensus.height_start_ZC = 20;                             // nZerocoinStartHeight // Block v4:
+        consensus.height_start_ZC_InvalidSerials = 0;               // nBlockFirstFraudulent
+        consensus.height_start_ZC_PublicSpends = 0;                 // nPublicZCSpends
+        consensus.height_start_ZC_SerialRangeCheck = 0;             // nBlockEnforceSerialRange
+        consensus.height_start_ZC_SerialsV2 = 40;                   // nBlockZerocoinV2
+        consensus.height_ZC_RecalcAccumulators = 999999999;         // nBlockRecalculateAccumulators
 
         // Zerocoin-related params
         consensus.ZC_Modulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -197,8 +193,8 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1557039007;
-        consensus.ZC_WrappedSerialsSupply = 4131563 * COIN;   // zerocoin supply at height_last_ZC_WrappedSerials
+        consensus.ZC_TimeStart = 1568063714;                        // nZerocoinStartTime
+        consensus.ZC_WrappedSerialsSupply = 0 * COIN;               // nSupplyBeforeFakeSerial // zerocoin supply at height_last_ZC_WrappedSerials
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -218,10 +214,10 @@ public:
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 63);     // starting with 'S'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 73);
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xb2)(0x1e).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xad)(0xe4).convert_to_container<std::vector<unsigned char> >();
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x77).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x02)(0xef).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
     }
@@ -274,25 +270,21 @@ public:
         consensus.strSporkPubKey = "0435AEAD48730C2BAF5776B6B858C9CA22EE3FA9F195A931ED1D3D5C4214BBABEACBE4A3913044987B8E37A8FAE337451D8CBE9E99AC622DBCDC3AA9732F1A76F3";
 
         // height based activations
-        consensus.height_last_PoW = 200;
-        consensus.height_last_ZC_AccumCheckpoint = 1106090;
-        consensus.height_last_ZC_WrappedSerials = -1;
-        consensus.height_start_BIP65 = 851019;                  // Block v5: d1ec8838ba8f644e78dd4f8e861d31e75457dfe607b31deade30e806b5f46c1c
-        consensus.height_start_InvalidUTXOsCheck = 999999999;
-        consensus.height_start_MessSignaturesV2 = 1347000;      // height_start_TimeProtoV2
-        consensus.height_start_StakeModifierNewSelection = 51197;
-        consensus.height_start_StakeModifierV2 = 1214000;       // Block v6: 1822577176173752aea33d1f60607cefe9e0b1c54ebaa77eb40201a385506199
-        consensus.height_start_TimeProtoV2 = 1347000;           // Block v7: 30c173ffc09a13f288bf6e828216107037ce5b79536b1cebd750a014f4939882
-        consensus.height_start_ZC = 201576;                     // Block v4: 258c489f42f03cb97db2255e47938da4083eee4e242853c2d48bae2b1d0110a6
-        consensus.height_start_ZC_InvalidSerials = 999999999;
-        consensus.height_start_ZC_PublicSpends = 1106100;
-        consensus.height_start_ZC_SerialRangeCheck = 1;
-        consensus.height_start_ZC_SerialsV2 = 444020;
-        consensus.height_ZC_RecalcAccumulators = 999999999;
-
-        // validation by-pass
-        consensus.nPivxBadBlockTime = 1489001494; // Skip nBit validation of Block 201 per PR #915
-        consensus.nPivxBadBlockBits = 0x1e0a20bd; // Skip nBit validation of Block 201 per PR #915
+        consensus.height_last_PoW = 200;                            // nLastPOWBlock
+        consensus.height_last_ZC_AccumCheckpoint = 0;               // nBlockLastGoodCheckpoint
+        consensus.height_last_ZC_WrappedSerials = -1;               // nFakeSerialBlockheightEnd
+        consensus.height_start_BIP65 = 851019;                      // nBIP65ActivationHeight // Block v5:
+        consensus.height_start_InvalidUTXOsCheck = 0;               // nBlockEnforceInvalidUTXO
+        consensus.height_start_MessSignaturesV2 = 1347000;          // nBlockEnforceNewMessageSignatures // height_start_TimeProtoV2
+        consensus.height_start_StakeModifierNewSelection = 0;       // nModifierUpdateBlock
+        consensus.height_start_StakeModifierV2 = 801;               // nBlockStakeModifierlV2 // Block v6:
+        consensus.height_start_TimeProtoV2 = 1347000;               // nBlockTimeProtocolV2 // Block v7:
+        consensus.height_start_ZC = 20;                             // nZerocoinStartHeight // Block v4:
+        consensus.height_start_ZC_InvalidSerials = 0;               // nBlockFirstFraudulent
+        consensus.height_start_ZC_PublicSpends = 0;                 // nPublicZCSpends
+        consensus.height_start_ZC_SerialRangeCheck = 0;             // nBlockEnforceSerialRange
+        consensus.height_start_ZC_SerialsV2 = 40;                   // nBlockZerocoinV2
+        consensus.height_ZC_RecalcAccumulators = 999999999;         // nBlockRecalculateAccumulators
 
         // Zerocoin-related params
         consensus.ZC_Modulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -306,7 +298,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1501776000;
+        consensus.ZC_TimeStart = 1568063814;
         consensus.ZC_WrappedSerialsSupply = 0;   // WrappedSerials only on main net
 
         /**
@@ -373,7 +365,7 @@ public:
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMasternodeCountDrift = 4;        // num of MN we allow the see-saw payments to be off by
-        consensus.nMaxMoneyOut = 43199500 * COIN;
+        consensus.nMaxMoneyOut = 20000000000 * COIN;
         consensus.nPoolMaxTransactions = 2;
         consensus.nProposalEstablishmentTime = 60 * 5;  // at least 5 min old to make it into a budget
         consensus.nStakeMinAge = 0;
@@ -391,21 +383,21 @@ public:
         consensus.strSporkPubKey = "043969b1b0e6f327de37f297a015d37e2235eaaeeb3933deecd8162c075cee0207b13537618bde640879606001a8136091c62ec272dd0133424a178704e6e75bb7";
 
         // height based activations
-        consensus.height_last_PoW = 250;
-        consensus.height_last_ZC_AccumCheckpoint = 310;     // no checkpoints on regtest
-        consensus.height_last_ZC_WrappedSerials = -1;
-        consensus.height_start_BIP65 = 851019;              // Not defined for regtest. Inherit TestNet value.
-        consensus.height_start_InvalidUTXOsCheck = 999999999;
-        consensus.height_start_MessSignaturesV2 = 1;
-        consensus.height_start_StakeModifierNewSelection = 0;
-        consensus.height_start_StakeModifierV2 = 251;       // start with modifier V2 on regtest
-        consensus.height_start_TimeProtoV2 = 999999999;
-        consensus.height_start_ZC = 300;
-        consensus.height_start_ZC_InvalidSerials = 999999999;
-        consensus.height_start_ZC_PublicSpends = 400;
-        consensus.height_start_ZC_SerialRangeCheck = 300;
-        consensus.height_start_ZC_SerialsV2 = 300;
-        consensus.height_ZC_RecalcAccumulators = 999999999;
+        consensus.height_last_PoW = 250;                            // nLastPOWBlock
+        consensus.height_last_ZC_AccumCheckpoint = 0;               // nBlockLastGoodCheckpoint
+        consensus.height_last_ZC_WrappedSerials = -1;               // nFakeSerialBlockheightEnd
+        consensus.height_start_BIP65 = 851019;                      // nBIP65ActivationHeight // Block v5:
+        consensus.height_start_InvalidUTXOsCheck = 0;               // nBlockEnforceInvalidUTXO
+        consensus.height_start_MessSignaturesV2 = 1347000;          // nBlockEnforceNewMessageSignatures // height_start_TimeProtoV2
+        consensus.height_start_StakeModifierNewSelection = 0;       // nModifierUpdateBlock
+        consensus.height_start_StakeModifierV2 = 801;               // nBlockStakeModifierlV2 // Block v6:
+        consensus.height_start_TimeProtoV2 = 1347000;               // nBlockTimeProtocolV2 // Block v7:
+        consensus.height_start_ZC = 20;                             // nZerocoinStartHeight // Block v4:
+        consensus.height_start_ZC_InvalidSerials = 0;               // nBlockFirstFraudulent
+        consensus.height_start_ZC_PublicSpends = 0;                 // nPublicZCSpends
+        consensus.height_start_ZC_SerialRangeCheck = 0;             // nBlockEnforceSerialRange
+        consensus.height_start_ZC_SerialsV2 = 40;                   // nBlockZerocoinV2
+        consensus.height_ZC_RecalcAccumulators = 999999999;         // nBlockRecalculateAccumulators
 
         // Zerocoin-related params
         consensus.ZC_Modulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
