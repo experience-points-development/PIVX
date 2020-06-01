@@ -8,9 +8,9 @@ reset-files.bash
 
 *.exe
 src/pivx
-src/pivxd
-src/pivx-cli
-src/pivx-tx
+src/eXperiencePointsd
+src/eXperiencePoints-cli
+src/eXperiencePoints-tx
 src/test/test_pivx
 src/qt/test/test_pivx-qt
 
@@ -84,8 +84,8 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-pivx-qt
-PIVX-Qt.app
+eXperiencePoints-qt
+eXperiencePoints-Qt.app
 background.tiff*
 
 # Unit-tests
