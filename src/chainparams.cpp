@@ -54,8 +54,8 @@ void CChainParams::UpdateNetworkUpgradeParameters(Consensus::UpgradeIndex idx, i
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "U.S. News & World Report Jan 28 2016 With His Absence, Trump Dominates Another Debate";
-    const CScript genesisOutputScript = CScript() << ParseHex("04c10e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9") << OP_CHECKSIG;
+    const char* pszTimestamp = "The New York Times Mar 29 2019 Brexit Goes Back to Square One as Parliament Rejects May’s Plan a Third Time";
+    const CScript genesisOutputScript = CScript() << ParseHex("042cbeb9ca34ea1b69fbef2c6c6dff7d048102e9c248eb5d889e46d2533c1a97ea09e9e96462d6d67617de5fd278c792a8a3a225bfd8f9b162eeaf67dcd0a6e928") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -70,37 +70,24 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
  * + Contains no strange transactions
  */
 static Checkpoints::MapCheckpoints mapCheckpoints = {
-    { 259201, uint256S("1c9121bf9329a6234bfd1ea2d91515f19cd96990725265253f4b164283ade5dd")},
-    { 424998, uint256S("f31e381eedb0ed3ed65fcc98cc71f36012bee32e8efd017c4f9fb0620fd35f6b")},
-    { 616764, uint256S("29dd0bd1c59484f290896687b4ffb6a49afa5c498caf61967c69a541f8191557")}, //!< First block to use new modifierV1
-    { 623933, uint256S("c7aafa648a0f1450157dc93bd4d7448913a85b7448f803b4ab970d91fc2a7da7")},
-    { 791150, uint256S("8e76f462e4e82d1bd21cb72e1ce1567d4ddda2390f26074ffd1f5d9c270e5e50")},
-    { 795000, uint256S("4423cceeb9fd574137a18733416275a70fdf95283cc79ad976ca399aa424a443")},
-    { 863787, uint256S("5b2482eca24caf2a46bb22e0545db7b7037282733faa3a42ec20542509999a64")},
-    { 863795, uint256S("2ad866818c4866e0d555181daccc628056216c0db431f88a825e84ed4f469067")},
-    { 863805, uint256S("a755bd9a22b63c70d3db474f4b2b61a1f86c835b290a081bb3ec1ba2103eb4cb")},
-    { 867733, uint256S("03b26296bf693de5782c76843d2fb649cb66d4b05550c6a79c047ff7e1c3ae15")},
-    { 879650, uint256S("227e1d2b738b6cd83c46d1d64617934ec899d77cee34336a56e61b71acd10bb2")},
-    { 895400, uint256S("7796a0274a608fac12d400198174e50beda992c1d522e52e5b95b884bc1beac6")}, //!< Block that serial# range is enforced
-    { 895991, uint256S("d53013ed7ea5c325b9696c95e07667d6858f8ff7ee13fecfa90827bf3c9ae316")}, //!< Network split here
-    { 908000, uint256S("202708f8c289b676fceb832a079ff6b308a28608339acbf7584de533619d014d")},
-    {1142400, uint256S("98aff9d605bf123247f98b1e3a02567eb5799d208d78ec30fb89737b1c1f79c5")},
-    {1679090, uint256S("f747ce055ba1b12e1f2e842bd480bc647210799359cb2e553ab292065e3419d6")}, //!< First block with a "wrapped" serial spend
-    {1686229, uint256S("bb42bf1e886a7c23474634c90893dd3d68a6ccbfea4ac92a98da5cad0c6a6cb7")}, //!< Last block in the "wrapped" serial attack range
-    {1778954, uint256S("0d3241268264a2908d6babf00d9cd1ffb83d93d7bb4e428820127fe227c2029c")}, //!< Network split here
-    {1788528, uint256S("ea9243ff8fc079fdd7a04f11fac415de4d98e1bb0dc38db6f79f8f8bbfdbe496")}, //!< Network split here
-    {2153200, uint256S("14e477e597d24549cac5e59d97d32155e6ec2861c1003b42d0566f9bf39b65d5")}, //!< First v7 block
-    {2356049, uint256S("62e80d8e193bca84655fb78893b20f54a79f2d71124c4ea37b7ef51a0d5451c4")}, //!< Network split here
-    {2365700, uint256S("b5d0beead57735539abc2db2b0b08cd65db3e5928efd3c3bf3182d5bf013f36c")}, //!< PIVX v4.1.1 enforced
-    {2678402, uint256S("580a26ff0a45177a7a6f387f009c5b26140ea48b4790a857d9a796f8b3c25899")}, //!< Network split here
+    {      0, uint256S("0000077e296b47aa3003520719b8aafcba7c3975d39b4e19b899f14a70abe5f6")},
+    {    850, uint256S("11b21800ad2b1323d57528bbc64a9518ee67d3ca2378fdee8cb4de387ab6b28a")},
+    {   5051, uint256S("1766163ec2596b18aa8762e2dc4a7d86a06249cf569007e9c2f3da0b1431144f")},
+    {  10431, uint256S("cb542ae5eaf1cb8d9872c205bf28bbd102dd1c29a708888bc43357491247c673")},
+    {  49786, uint256S("0eeab3ab13a3064f9f5160048c7b4ea9fea9c3e073cf509920be9cdf9fd4edf5")},
+    {  55355, uint256S("6b8f5b64ec8db070ff7ff229a6c4295ed099489c76612d9f267083ac1a9dd06b")},
+    {  99765, uint256S("f5ca12a9eaac2f39e588cdc0eda9acc50d08518f42fcc3edfa45bbb8e06a2598")},
+    { 137543, uint256S("087fc4db51a229f7c20b84a3dfaaa49a55e4f64fa489e8c1325121ac5338ec5a")},
+    { 300000, uint256S("ae443e552a4669c0c8069152f56cb01f2f63250a766c2eeed0c2a351f22416c2")},
+    { 600000, uint256S("361f70535e75726536879c0766e40489b5d63c15668317ec6e138927bea8f3ca")},
 };
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1591401645, // * UNIX timestamp of last checkpoint block
-    5607713,    // * total number of transactions between genesis and last checkpoint
+    1557039007, // * UNIX timestamp of last checkpoint block
+    0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the UpdateTip debug.log lines)
-    3000        // * estimated number of transactions per day after checkpoint
+    500         // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet = {
@@ -110,14 +97,14 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet = {
 
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1454124731,
+    1557039107,
     0,
-    3000};
+    250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest = {{0, uint256S("0x001")}};
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1454124731,
+    1557039207,
     0,
     100};
 
@@ -128,10 +115,10 @@ public:
     {
         strNetworkID = "main";
 
-        genesis = CreateGenesisBlock(1454124731, 2402015, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1557039007, 53347, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
-        assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000732d7b120985c2051ccc37d1cb55057526fdbeba9666d7760fb51328ecf"));
+        assert(genesis.hashMerkleRoot == uint256S("0xfcea3047f39357950b756ed7a3ff4d1344998994d1dc5ea773409f595d9a147c"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.powLimit   = ~UINT256_ZERO >> 20;   // PIVX starting difficulty is 1 / 2^12
@@ -179,7 +166,7 @@ public:
         consensus.ZC_MinMintConfirmations = 20;
         consensus.ZC_MinMintFee = 1 * CENT;
         consensus.ZC_MinStakeDepth = 200;
-        consensus.ZC_TimeStart = 1508214600;        // October 17, 2017 4:30:00 AM
+        consensus.ZC_TimeStart = 1557039007;        // October 17, 2017 4:30:00 AM
 
         // Network upgrades
         consensus.vUpgrades[Consensus::BASE_NETWORK].nActivationHeight =
@@ -258,10 +245,10 @@ public:
     {
         strNetworkID = "test";
 
-        genesis = CreateGenesisBlock(1454124731, 2402015, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1557039107, 213285, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
-        assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000b0d0ec75465590aeabb203ca97f6847b76328ffdbb3f7188f44b12f4b65"));
+        assert(genesis.hashMerkleRoot == uint256S("0xfcea3047f39357950b756ed7a3ff4d1344998994d1dc5ea773409f595d9a147c"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.powLimit   = ~UINT256_ZERO >> 20;   // PIVX starting difficulty is 1 / 2^12
@@ -372,10 +359,10 @@ public:
     {
         strNetworkID = "regtest";
 
-        genesis = CreateGenesisBlock(1454124731, 2402015, 0x1e0ffff0, 1, 250 * COIN);
+        genesis = CreateGenesisBlock(1557039207, 196733, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
-        assert(genesis.hashMerkleRoot == uint256S("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000006eaa9f4ae6ce26e0fd876ee9a121591a8afbb75327c05018627f7dd20ec"));
+        assert(genesis.hashMerkleRoot == uint256S("0xfcea3047f39357950b756ed7a3ff4d1344998994d1dc5ea773409f595d9a147c"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.powLimit   = ~UINT256_ZERO >> 20;   // PIVX starting difficulty is 1 / 2^12
