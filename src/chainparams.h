@@ -85,6 +85,7 @@ public:
 
     bool IsRegTestNet() const { return NetworkIDString() == CBaseChainParams::REGTEST; }
     bool IsTestnet() const { return NetworkIDString() == CBaseChainParams::TESTNET; }
+    bool IsMainnet() const { return NetworkIDString() == CBaseChainParams::MAIN; }
 
     void UpdateNetworkUpgradeParameters(Consensus::UpgradeIndex idx, int nActivationHeight);
 protected:

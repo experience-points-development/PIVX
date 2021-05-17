@@ -778,37 +778,121 @@ double ConvertBitsToDouble(unsigned int nBits)
 
 CAmount GetBlockValue(int nHeight)
 {
-    // Fixed block value on regtest
+    CAmount nSubsidy = 0 * COIN;
+
+    if (Params().IsTestnet()) {
+        if (nHeight == 1) {
+            nSubsidy = 3000001 * COIN;
+        } else if (nHeight <= 11 && nHeight >= 2) {
+            nSubsidy = 400000000 * COIN;
+        } else if (nHeight <= 601 && nHeight >= 12) {
+            nSubsidy = 1200 * COIN;
+        } else if (nHeight <= 701 && nHeight >= 602) {
+            nSubsidy = 1100 * COIN;
+        } else if (nHeight <= 801 && nHeight >= 702) {
+            nSubsidy = 1000 * COIN;
+        } else if (nHeight <= 901 && nHeight >= 802) {
+            nSubsidy = 900 * COIN;
+        } else if (nHeight <= 1001 && nHeight >= 902) {
+            nSubsidy = 800 * COIN;
+        } else if (nHeight <= 1101 && nHeight >= 1002) {
+            nSubsidy = 700 * COIN;
+        } else if (nHeight <= 1201 && nHeight >= 1102) {
+            nSubsidy = 600 * COIN;
+        } else if (nHeight <= 1301 && nHeight >= 1202) {
+            nSubsidy = 500 * COIN;
+        } else if (nHeight <= 1401 && nHeight >= 1302) {
+            nSubsidy = 400 * COIN;
+        }
+    }
+
     if (Params().IsRegTestNet()) {
-        return 250 * COIN;
+        if (nHeight == 1)
+            nSubsidy = 1200 * COIN;
     }
-    // Testnet high-inflation blocks [2, 200] with value 250k PIV
-    const bool isTestnet = Params().IsTestnet();
-    if (isTestnet && nHeight < 201 && nHeight > 1) {
-        return 250000 * COIN;
+
+    if (Params().IsMainnet()) {
+        if (nHeight == 1) {
+            nSubsidy = 3000001 * COIN;
+        } else if (nHeight <= 11 && nHeight >= 2) {
+            nSubsidy = 400000000 * COIN;
+        } else if (nHeight <= 52571 && nHeight >= 12) {
+            nSubsidy = 1200 * COIN;
+        } else if (nHeight <= 210251 && nHeight >= 52572) {
+            nSubsidy = 1100 * COIN;
+        } else if (nHeight <= 526611 && nHeight >= 210252) {
+            nSubsidy = 1000 * COIN;
+        } else if (nHeight <= 1051211 && nHeight >= 526612) {
+            nSubsidy = 900 * COIN;
+        } else if (nHeight <= 2628011 && nHeight >= 1051212) {
+            nSubsidy = 800 * COIN;
+        } else if (nHeight <= 4204811 && nHeight >= 2628012) {
+            nSubsidy = 700 * COIN;
+        } else if (nHeight <= 6307211 && nHeight >= 4204812) {
+            nSubsidy = 600 * COIN;
+        } else if (nHeight <= 8935211 && nHeight >= 6307212) {
+            nSubsidy = 500 * COIN;
+        } else if (nHeight <= 30796911 && nHeight >= 8935212) {
+            nSubsidy = 400 * COIN;
+        }
     }
-    // Mainnet/Testnet block reward reduction schedule
-    const int nLast = Params().GetConsensus().vUpgrades[Consensus::UPGRADE_ZC_V2].nActivationHeight;
-    if (nHeight > nLast)   return 5    * COIN;
-    if (nHeight > 648000)  return 4.5  * COIN;
-    if (nHeight > 604800)  return 9    * COIN;
-    if (nHeight > 561600)  return 13.5 * COIN;
-    if (nHeight > 518400)  return 18   * COIN;
-    if (nHeight > 475200)  return 22.5 * COIN;
-    if (nHeight > 432000)  return 27   * COIN;
-    if (nHeight > 388800)  return 31.5 * COIN;
-    if (nHeight > 345600)  return 36   * COIN;
-    if (nHeight > 302400)  return 40.5 * COIN;
-    if (nHeight > 151200)  return 45   * COIN;
-    if (nHeight > 86400)   return 225  * COIN;
-    if (nHeight !=1)       return 250  * COIN;
-    // Premine for 6 masternodes at block 1
-    return 60001 * COIN;
+
+    return nSubsidy;
 }
 
-int64_t GetMasternodePayment()
+int64_t GetMasternodePayment(int nHeight, int64_t blockValue)
 {
-    return 3 * COIN;
+    int64_t ret = 0;
+
+    if (Params().IsTestnet()) {
+        if (nHeight <= Consensus::UPGRADE_POS) {
+            ret = 0;
+        } else if (nHeight <= 601 && nHeight > Consensus::UPGRADE_POS) {
+            ret = blockValue * .40;
+        } else if (nHeight <= 701 && nHeight >= 602) {
+            ret = blockValue * .42;
+        } else if (nHeight <= 801 && nHeight >= 702) {
+            ret = blockValue * .44;
+        } else if (nHeight <= 901 && nHeight >= 802) {
+            ret = blockValue * .46;
+        } else if (nHeight <= 1001 && nHeight >= 902) {
+            ret = blockValue * .51;
+        } else if (nHeight <= 1101 && nHeight >= 1002) {
+            ret = blockValue * .54;
+        } else if (nHeight <= 1201 && nHeight >= 1102) {
+            ret = blockValue * .58;
+        } else if (nHeight <= 1301 && nHeight >= 1202) {
+            ret = blockValue * .62;
+        } else if (nHeight <= 1401 && nHeight >= 1302) {
+            ret = blockValue * .75;
+        }
+    }
+
+    if (Params().IsMainnet()) {
+        if (nHeight <= Consensus::UPGRADE_POS) {
+            ret = 0;
+        } else if (nHeight <= 52571 && nHeight > Consensus::UPGRADE_POS) {
+            ret = blockValue * .40;
+        } else if (nHeight <= 210251 && nHeight >= 52572) {
+            ret = blockValue * .42;
+        } else if (nHeight <= 526611 && nHeight >= 210252) {
+            ret = blockValue * .44;
+        } else if (nHeight <= 1051211 && nHeight >= 526612) {
+            ret = blockValue * .46;
+        } else if (nHeight <= 2628011 && nHeight >= 1051212) {
+            ret = blockValue * .51;
+        } else if (nHeight <= 4204811 && nHeight >= 2628012) {
+            ret = blockValue * .54;
+        } else if (nHeight <= 6307211 && nHeight >= 4204812) {
+            ret = blockValue * .58;
+        } else if (nHeight <= 8935211 && nHeight >= 6307212) {
+            ret = blockValue * .62;
+        } else if (nHeight <= 30796911 && nHeight >= 8935212) {
+            ret = blockValue * .75;
+        }
+    }
+
+    return ret;
 }
 
 bool IsInitialBlockDownload()
@@ -2583,7 +2667,7 @@ bool CheckColdStakeFreeOutput(const CTransaction& tx, const int nHeight)
     const unsigned int outs = tx.vout.size();
     const CTxOut& lastOut = tx.vout[outs-1];
     if (outs >=3 && lastOut.scriptPubKey != tx.vout[outs-2].scriptPubKey) {
-        if (lastOut.nValue == GetMasternodePayment())
+        if (lastOut.nValue == GetMasternodePayment(nHeight, GetBlockValue(nHeight)))
             return true;
 
         // This could be a budget block.
