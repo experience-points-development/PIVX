@@ -323,7 +323,7 @@ static CAmount AmountFromValue(const UniValue& value)
     if (!value.isNum() && !value.isStr())
         throw std::runtime_error("Amount is not a number or string");
     double dAmount = value.get_real();
-    if (dAmount <= 0.0 || dAmount > 21000000.0)
+    if (dAmount <= 0.0 || dAmount > 20000000000.0)
         throw std::runtime_error("Invalid amount");
     CAmount nAmount = roundint64(dAmount * COIN);
     if (!Params().GetConsensus().MoneyRange(nAmount))
