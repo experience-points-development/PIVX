@@ -2437,7 +2437,7 @@ CWallet::OutputAvailabilityResult CWallet::CheckOutputAvailability(
     OutputAvailabilityResult res;
 
     // Check for only 10k utxo
-    if (nCoinType == ONLY_10000 && output.nValue != MN_COLL_AMT) return res;
+    if (nCoinType == ONLY_500000 && output.nValue != MN_COLL_AMT) return res;
 
     // Check for stakeable utxo
     if (nCoinType == STAKEABLE_COINS && output.IsZerocoinMint()) return res;
@@ -2454,7 +2454,7 @@ CWallet::OutputAvailabilityResult CWallet::CheckOutputAvailability(
     if (mine == ISMINE_WATCH_ONLY && coinControl && !coinControl->fAllowWatchOnly) return res;
 
     // Skip locked utxo
-    if (!fIncludeLocked && IsLockedCoin(wtxid, outIndex) && nCoinType != ONLY_10000) return res;
+    if (!fIncludeLocked && IsLockedCoin(wtxid, outIndex) && nCoinType != ONLY_500000) return res;
 
     // Check if we should include zero value utxo
     if (output.nValue <= 0) return res;

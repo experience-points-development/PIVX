@@ -973,7 +973,7 @@ bool WalletModel::getMNCollateralCandidate(COutPoint& outPoint)
 {
     CWallet::AvailableCoinsFilter coinsFilter;
     coinsFilter.fIncludeDelegated = false;
-    coinsFilter.nCoinType = ONLY_10000;
+    coinsFilter.nCoinType = ONLY_500000;
     std::vector<COutput> vCoins;
     wallet->AvailableCoins(&vCoins, nullptr, coinsFilter);
     for (const COutput& out : vCoins) {

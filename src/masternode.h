@@ -19,7 +19,7 @@
 static const unsigned int MNPING_DEPTH = 12;
 
 /* Masternode collateral amount */
-static const CAmount MN_COLL_AMT = 10000 * COIN;
+static const CAmount MN_COLL_AMT = 500000 * COIN;
 
 
 class CMasternode;
