@@ -155,10 +155,7 @@ public:
         consensus.nMaxProposalPayments = 6;
 
         // spork keys
-        consensus.strSporkPubKey = "0410050aa740d280b134b40b40658781fc1116ba7700764e0ce27af3e1737586b3257d19232e0cb5084947f5107e44bcd577f126c9eb4a30ea2807b271d2145298";
-        consensus.strSporkPubKeyOld = "040F129DE6546FE405995329A887329BED4321325B1A73B0A257423C05C1FCFE9E40EF0678AEF59036A22C42E61DFD29DF7EFB09F56CC73CADF64E05741880E3E7";
-        consensus.nTime_EnforceNewSporkKey = 1608512400;    //!> December 21, 2020 01:00:00 AM GMT
-        consensus.nTime_RejectOldSporkKey = 1614560400;     //!> March 1, 2021 01:00:00 AM GMT
+        consensus.strSporkPubKey = "0481C90933CF241F89DFDFC0ADED703DDCFE9BA0634DE1DCA8B881643CA0EC833DB1F7D825A2624352FC48446435E69E1185916CC509229C8E974EE18ECC1267D5";
 
         // height-based activations
         consensus.height_last_invalid_UTXO = 894538;
@@ -225,10 +222,10 @@ public:
 
         // Note that of those with the service bits flag, most only support a subset of possible options
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 63);     // starting with 'S'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 73);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x02, 0x2D, 0x25, 0x33};
         base58Prefixes[EXT_SECRET_KEY] = {0x02, 0x21, 0x31, 0x2B};
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -288,10 +285,7 @@ public:
         consensus.nMaxProposalPayments = 20;
 
         // spork keys
-        consensus.strSporkPubKey = "04677c34726c491117265f4b1c83cef085684f36c8df5a97a3a42fc499316d0c4e63959c9eca0dba239d9aaaf72011afffeb3ef9f51b9017811dec686e412eb504";
-        consensus.strSporkPubKeyOld = "04E88BB455E2A04E65FCC41D88CD367E9CCE1F5A409BE94D8C2B4B35D223DED9C8E2F4E061349BA3A38839282508066B6DC4DB72DD432AC4067991E6BF20176127";
-        consensus.nTime_EnforceNewSporkKey = 1608512400;    //!> December 21, 2020 01:00:00 AM GMT
-        consensus.nTime_RejectOldSporkKey = 1614560400;     //!> March 1, 2021 01:00:00 AM GMT
+        consensus.strSporkPubKey = "0435AEAD48730C2BAF5776B6B858C9CA22EE3FA9F195A931ED1D3D5C4214BBABEACBE4A3913044987B8E37A8FAE337451D8CBE9E99AC622DBCDC3AA9732F1A76F3";
 
         // height based activations
         consensus.height_last_invalid_UTXO = -1;
@@ -341,10 +335,10 @@ public:
 
         // nodes with support for servicebits filtering should be at the top
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet pivx addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet pivx script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 127); // Testnet pivx addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 20);  // Testnet pivx script addresses start with '8' or '9'
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 73);     // starting with 'W'
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 78);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
         // Testnet pivx BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = {0x3a, 0x80, 0x61, 0xa0};
         // Testnet pivx BIP32 prvkeys start with 'DRKP'
@@ -410,9 +404,6 @@ public:
         Address: yCvUVd72w7xpimf981m114FSFbmAmne7j9
         */
         consensus.strSporkPubKey = "043969b1b0e6f327de37f297a015d37e2235eaaeeb3933deecd8162c075cee0207b13537618bde640879606001a8136091c62ec272dd0133424a178704e6e75bb7";
-        consensus.strSporkPubKeyOld = "";
-        consensus.nTime_EnforceNewSporkKey = 0;
-        consensus.nTime_RejectOldSporkKey = 0;
 
         // height based activations
         consensus.height_last_invalid_UTXO = -1;

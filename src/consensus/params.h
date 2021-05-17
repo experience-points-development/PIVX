@@ -109,9 +109,6 @@ struct Params {
 
     // spork keys
     std::string strSporkPubKey;
-    std::string strSporkPubKeyOld;
-    int64_t nTime_EnforceNewSporkKey;
-    int64_t nTime_RejectOldSporkKey;
 
     // height-based activations
     int height_last_invalid_UTXO;
