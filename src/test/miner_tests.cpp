@@ -102,7 +102,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
         assert(pindexPrev);
         pblock->nTime = pindexPrev->GetMedianTimePast() + 60;
         pblock->vtx.clear(); // Update coinbase input height manually
-        CreateCoinbaseTx(pblock.get(), CScript(), pindexPrev);
+        CreateCoinbaseTx(pblock.get(), CScript(), pindexPrev, 0);
         if (txFirst.size() < 2)
             txFirst.emplace_back(pblock->vtx[0]);
         pblock->hashMerkleRoot = BlockMerkleRoot(*pblock);

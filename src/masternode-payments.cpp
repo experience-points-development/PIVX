@@ -234,7 +234,7 @@ bool IsBlockValueValid(int nHeight, CAmount& nExpectedValue, CAmount nMinted)
         }
     }
 
-    return nMinted <= nExpectedValue;
+    return nMinted == nExpectedValue;
 }
 
 bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
@@ -284,14 +284,14 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
 }
 
 
-void FillBlockPayee(CMutableTransaction& txNew, const int nHeight, bool fProofOfStake)
+void FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, const int nHeight, bool fProofOfStake)
 {
     if (nHeight == 0) return;
 
     if (!sporkManager.IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) ||           // if superblocks are not enabled
             !g_budgetman.FillBlockPayee(txNew, nHeight, fProofOfStake) ) {    // or this is not a superblock,
         // ... or there's no budget with enough votes, then pay a masternode
-        masternodePayments.FillBlockPayee(txNew, nHeight, fProofOfStake);
+        masternodePayments.FillBlockPayee(txNew, nFees, nHeight, fProofOfStake);
     }
 }
 
@@ -304,7 +304,7 @@ std::string GetRequiredPaymentsString(int nBlockHeight)
     }
 }
 
-void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const int nHeight, bool fProofOfStake)
+void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, const int nHeight, bool fProofOfStake)
 {
     if (nHeight == 0) return;
 
@@ -334,7 +334,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const int n
             unsigned int i = txNew.vout.size();
             txNew.vout.resize(i + 1);
             txNew.vout[i].scriptPubKey = payee;
-            txNew.vout[i].nValue = masternodePayment;
+            txNew.vout[i].nValue = masternodePayment + nFees;
 
             //subtract mn payment from the stake reward
             if (!txNew.vout[1].IsZerocoinMint()) {
@@ -364,6 +364,10 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const int n
         ExtractDestination(payee, address1);
 
         LogPrint(BCLog::MASTERNODE,"Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), EncodeDestination(address1).c_str());
+    } else {
+        if (!fProofOfStake) {
+            txNew.vout[0].nValue = GetBlockValue(nHeight) + nFees;
+        }
     }
 }
 
@@ -522,6 +526,10 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 
     //require at least 6 signatures
     int nMaxSignatures = 0;
+    int nFees = 0;
+    int nStakerFee = 0;
+    int nMasternodeFee = 0;
+
     for (CMasternodePayee& payee : vecPayments)
         if (payee.nVotes >= nMaxSignatures && payee.nVotes >= MNPAYMENTS_SIGNATURES_REQUIRED)
             nMaxSignatures = payee.nVotes;
@@ -530,13 +538,18 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
     if (nMaxSignatures < MNPAYMENTS_SIGNATURES_REQUIRED) return true;
 
     std::string strPayeesPossible = "";
-    CAmount requiredMasternodePayment = GetMasternodePayment(nBlockHeight, GetBlockValue(nBlockHeight));
+    CAmount nReward = GetBlockValue(nBlockHeight);
+    CAmount requiredMasternodePayment = GetMasternodePayment(nBlockHeight, nReward);
 
     for (CMasternodePayee& payee : vecPayments) {
         bool found = false;
         for (CTxOut out : txNew.vout) {
             if (payee.scriptPubKey == out.scriptPubKey) {
-                if(out.nValue == requiredMasternodePayment)
+                nFees = txNew.GetValueOut() - nReward - requiredMasternodePayment;
+                nStakerFee = nFees * 0.4;
+                nMasternodeFee = nFees - nStakerFee;
+
+                if(out.nValue >= (requiredMasternodePayment + nMasternodeFee))
                     found = true;
                 else
                     LogPrintf("%s : Masternode payment value (%s) different from required value (%s).\n",
